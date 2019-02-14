@@ -1,0 +1,74 @@
+.themeForCalculator {
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  background: #505050;
+  padding: 20px;
+
+  &__logo {
+    > img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  .calculator {
+    width: 100%;
+
+    .keypad {
+      width: 100%;
+    }
+
+    button {
+      height: 50px;
+      background: #716f6f;
+      color: #fff;
+      border-color: #505050;
+
+      font-size: 24px;
+
+      &:hover {
+        background: #adabab;
+        color: #1ea3dd;
+      }
+    }
+
+    &__main {
+      width: 70%;
+
+      .keypad > button {
+        width: 33%;
+      }
+    }
+
+    &__sidebar {
+      width: 30%;
+
+      .keypad > button {
+        width: 100%;
+        background: #1ea3dd;
+
+        &:hover {
+          background: #fff;
+        }
+      }
+    }
+
+    .display {
+      padding: 10px;
+      background: #505050;
+      color: #fff;
+      font-weight: 100;
+      font-size: 45px;
+      line-height: 65px;
+      border: 0;
+    }
+  }
+}
